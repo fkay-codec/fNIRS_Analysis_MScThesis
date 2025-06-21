@@ -2,6 +2,10 @@ import os
 import pandas as pd
 
 """
+1. Before this script load all Resting State data in Satori Workflow, and perform SCI set at 1.0. This will result in text file per participant 
+that will include the SCI for each channel
+See SCI_1_RestState.flow
+
 This script analyzes Scalp Channel Index (SCI) data from Satori text output.
 
 Main Functions:
@@ -51,8 +55,10 @@ def extract_d_value(channel):
     channel = channel.split('-')[-1]  # Extract the last part after the underscore, which is the: D##
     return int(channel[1:]) # Extract the last part after the underscore, which is the d value
 
+# Select the input folder that contains the .txt files per subject
 input_folder = r"C:\Users\foivo\Documents\Satori\SampleData\MULPA Dataset\1a_perTask_SCI\RestingState_SCI"
-# extract an excel that has the Ch to SD mapping to use it later
+# extract an excel that has the Ch to SD mapping to use it later; 
+# here i use a random satori output from one subject GLM Results, its useful because it contains the Ch -> SD keys
 channel_to_SD_path = r"C:\Users\foivo\Documents\Satori\SampleData\MULPA Dataset\S01 example\01_RestingState\2024-05-02_003_TRIM_GLM_Results.xlsx"
 channel_to_SD_data = pd.read_excel(channel_to_SD_path)
 channel_to_SD_data = channel_to_SD_data.iloc[1:, [0,1]].reset_index(drop=True).T.reset_index(drop=True).T
