@@ -6,6 +6,7 @@ import os, shutil
 # This script goes through the MULPA dataset, and from each subject takes the .snirf task .snirf file and transfers it in another folder with the task name
 # for example, from s01 s02 s03 s04 the .snirf files for motor action are taken and placed in a motor action file and each .snirf is organized by subject number
 
+# change source_dir based on your directory of the raw data from the MULPA project
 source_dir = r"C:\Users\foivo\Documents\Satori\SampleData\MULPA Dataset\1_Data_Actual"
 output_dir = os.path.dirname(source_dir)
 print("source directory is", output_dir)
