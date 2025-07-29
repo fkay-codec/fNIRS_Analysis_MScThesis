@@ -1,0 +1,42 @@
+================================================================================
+ROC ANALYSIS RESULTS - MOTOR TASK ACTIVATION MAP
+================================================================================
+Analysis Date: 2025-07-16 16:45:52
+Golden Standard: Motor Task Activation Map
+Total Oxy Analyses: 5
+Total Deoxy Analyses: 5
+
+DETAILED AUC SCORES:
+--------------------------------------------------
+OXY ANALYSES (sorted by AUC):
+------------------------------
+ 1. RSFC: ICA Group Logcosh                  AUC = 0.70765
+ 2. RSFC: ICA Group Skew                     AUC = 0.70123
+ 3. RSFC: SBA Group Corr S10D7               AUC = 0.54864
+ 4. RSFC: SBA Group GLM Resp S10D7           AUC = 0.54321
+ 5. RSFC: SBA Group GLM S10D7                AUC = 0.54123
+
+DEOXY ANALYSES (sorted by AUC):
+------------------------------
+ 1. RSFC: ICA Group Skew                     AUC = 0.69312
+ 2. RSFC: ICA Group Logcosh                  AUC = 0.68313
+ 3. RSFC: SBA Group Corr S25D23              AUC = 0.58025
+ 4. RSFC: SBA Group GLM Resp S25D23          AUC = 0.57966
+ 5. RSFC: SBA Group GLM S25D23               AUC = 0.57554
+
+STATISTICAL SUMMARY:
+--------------------------------------------------
+Oxy AUC Statistics:
+  Mean: 0.60840
+  Std:  0.07849
+  Min:  0.54123
+  Max:  0.70765
+Deoxy AUC Statistics:
+  Mean: 0.62234
+  Std:  0.05383
+  Min:  0.57554
+  Max:  0.69312
+
+================================================================================
+END OF ANALYSIS
+================================================================================

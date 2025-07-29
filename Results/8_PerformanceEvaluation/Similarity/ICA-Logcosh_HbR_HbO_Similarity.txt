@@ -1,0 +1,5 @@
+Method: ICA-Logcosh
+Oxy File: ICA-Logcosh-Oxy
+Deoxy File: ICA-Logcosh-Deoxy
+Pearson correlation coefficient: 0.68
+P-value: 4.16e-15

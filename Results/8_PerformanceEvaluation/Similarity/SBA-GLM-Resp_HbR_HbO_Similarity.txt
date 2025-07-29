@@ -1,0 +1,5 @@
+Method: SBA-GLM-Resp
+Oxy File: SBA-GLM-Resp-S10D7-Oxy
+Deoxy File: SBA-GLM-Resp-S25D23-Deoxy
+Pearson correlation coefficient: 0.85
+P-value: 1.01e-28

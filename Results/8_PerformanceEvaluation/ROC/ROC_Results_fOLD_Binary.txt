@@ -1,0 +1,42 @@
+================================================================================
+ROC ANALYSIS RESULTS - FOLD BINARY
+================================================================================
+Analysis Date: 2025-07-16 16:47:50
+Golden Standard: fOLD Binary
+Total Oxy Analyses: 5
+Total Deoxy Analyses: 5
+
+DETAILED AUC SCORES:
+--------------------------------------------------
+OXY ANALYSES (sorted by AUC):
+------------------------------
+ 1. RSFC: SBA Group GLM S10D7                AUC = 0.85200
+ 2. RSFC: SBA Group GLM Resp S10D7           AUC = 0.85156
+ 3. RSFC: SBA Group Corr S10D7               AUC = 0.84761
+ 4. RSFC: ICA Group Skew                     AUC = 0.83794
+ 5. RSFC: ICA Group Logcosh                  AUC = 0.83004
+
+DEOXY ANALYSES (sorted by AUC):
+------------------------------
+ 1. RSFC: ICA Group Logcosh                  AUC = 0.89855
+ 2. RSFC: ICA Group Skew                     AUC = 0.89811
+ 3. RSFC: SBA Group Corr S25D23              AUC = 0.82126
+ 4. RSFC: SBA Group GLM Resp S25D23          AUC = 0.80852
+ 5. RSFC: SBA Group GLM S25D23               AUC = 0.80720
+
+STATISTICAL SUMMARY:
+--------------------------------------------------
+Oxy AUC Statistics:
+  Mean: 0.84383
+  Std:  0.00855
+  Min:  0.83004
+  Max:  0.85200
+Deoxy AUC Statistics:
+  Mean: 0.84673
+  Std:  0.04242
+  Min:  0.80720
+  Max:  0.89855
+
+================================================================================
+END OF ANALYSIS
+================================================================================

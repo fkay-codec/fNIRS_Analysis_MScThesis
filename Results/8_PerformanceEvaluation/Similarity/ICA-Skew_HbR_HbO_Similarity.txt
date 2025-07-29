@@ -1,0 +1,5 @@
+Method: ICA-Skew
+Oxy File: ICA-Skew-Oxy
+Deoxy File: ICA-Skew-Deoxy
+Pearson correlation coefficient: 0.67
+P-value: 1.42e-14

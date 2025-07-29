@@ -1,0 +1,5 @@
+Method: SBA-Corr
+Oxy File: SBA-Corr-S10D7-Oxy
+Deoxy File: SBA-Corr-S25D23-Deoxy
+Pearson correlation coefficient: 0.83
+P-value: 7.01e-27
