@@ -1,4 +1,5 @@
-# [Title of study] : Complete Data Processing & Analysis Pipeline
+# A Quantitative Comparison of Resting State Functional Connectivity Approaches in fNIRS:
+# Complete Data Processing & Analysis Pipeline
 
 Author: Foivos Kotsogiannis
 Email: f.kotsogiannisteftsoglou@student.maastrichtuniversity.nl
