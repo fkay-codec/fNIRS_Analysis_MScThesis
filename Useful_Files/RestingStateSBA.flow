@@ -1,0 +1,319 @@
+{
+    "connections": [
+        {
+            "in_id": "{cba64f57-649d-4b29-8cb0-d3a8f0b3668f}",
+            "in_index": 0,
+            "in_type": "CC",
+            "out_id": "{386f3fb9-c808-4ddb-9b5d-eee86e37c282}",
+            "out_index": 0,
+            "out_type": "CC"
+        },
+        {
+            "in_id": "{5982edb5-9ea4-4cee-a9ec-611c357b9de4}",
+            "in_index": 0,
+            "in_type": "CC",
+            "out_id": "{de6cf490-d781-4594-85d3-f5c46a5d76b5}",
+            "out_index": 0,
+            "out_type": "CC"
+        },
+        {
+            "in_id": "{386f3fb9-c808-4ddb-9b5d-eee86e37c282}",
+            "in_index": 0,
+            "in_type": "CC",
+            "out_id": "{b8f2e7cb-6492-4652-89a2-d754034cd13f}",
+            "out_index": 0,
+            "out_type": "CC"
+        },
+        {
+            "in_id": "{b4697578-148e-4d02-bac0-da4d8aaba469}",
+            "in_index": 0,
+            "in_type": "CC",
+            "out_id": "{98e685c9-a26b-47de-85b8-7cea8dd822f1}",
+            "out_index": 0,
+            "out_type": "CC"
+        },
+        {
+            "in_id": "{1148ee1f-f40b-4306-98cd-15d9ddb6be75}",
+            "in_index": 0,
+            "in_type": "CC",
+            "out_id": "{02f39826-42b8-4eab-bc5c-2d7bc2396b23}",
+            "out_index": 0,
+            "out_type": "CC"
+        },
+        {
+            "in_id": "{b8f2e7cb-6492-4652-89a2-d754034cd13f}",
+            "in_index": 0,
+            "in_type": "OD",
+            "out_id": "{f251243c-e811-42bf-95d3-2da5613b66b4}",
+            "out_index": 0,
+            "out_type": "OD"
+        },
+        {
+            "in_id": "{f251243c-e811-42bf-95d3-2da5613b66b4}",
+            "in_index": 0,
+            "in_type": "OD",
+            "out_id": "{a10dac94-a6d3-4abb-a242-10342bdff6f2}",
+            "out_index": 0,
+            "out_type": "OD"
+        },
+        {
+            "in_id": "{de6cf490-d781-4594-85d3-f5c46a5d76b5}",
+            "in_index": 0,
+            "in_type": "CC",
+            "out_id": "{b4697578-148e-4d02-bac0-da4d8aaba469}",
+            "out_index": 0,
+            "out_type": "CC"
+        },
+        {
+            "in_id": "{98e685c9-a26b-47de-85b8-7cea8dd822f1}",
+            "in_index": 0,
+            "in_type": "CC",
+            "out_id": "{1148ee1f-f40b-4306-98cd-15d9ddb6be75}",
+            "out_index": 0,
+            "out_type": "CC"
+        },
+        {
+            "in_id": "{02f39826-42b8-4eab-bc5c-2d7bc2396b23}",
+            "in_index": 0,
+            "in_type": "CC",
+            "out_id": "{cba64f57-649d-4b29-8cb0-d3a8f0b3668f}",
+            "out_index": 0,
+            "out_type": "CC"
+        }
+    ],
+    "nodes": [
+        {
+            "Parameters": {
+                "restoreHFcheckBox": true
+            },
+            "id": "{98e685c9-a26b-47de-85b8-7cea8dd822f1}",
+            "model": {
+                "name": "fNIRSTDDRCCModel"
+            },
+            "position": {
+                "x": 175,
+                "y": 1536
+            }
+        },
+        {
+            "Parameters": {
+                "DataList": [
+                    "C:/Users/foivo/Documents/Satori/SampleData/MULPA Dataset/2_Data_AfterExclusion/01_RestingState_TrimmedToEvents_UniDu_OD/P01_01_RestingState_UniDu_OD.snirf",
+                    "C:/Users/foivo/Documents/Satori/SampleData/MULPA Dataset/2_Data_AfterExclusion/01_RestingState_TrimmedToEvents_UniDu_OD/P02_01_RestingState_UniDu_OD.snirf",
+                    "C:/Users/foivo/Documents/Satori/SampleData/MULPA Dataset/2_Data_AfterExclusion/01_RestingState_TrimmedToEvents_UniDu_OD/P03_01_RestingState_UniDu_OD.snirf",
+                    "C:/Users/foivo/Documents/Satori/SampleData/MULPA Dataset/2_Data_AfterExclusion/01_RestingState_TrimmedToEvents_UniDu_OD/P04_01_RestingState_UniDu_OD.snirf",
+                    "C:/Users/foivo/Documents/Satori/SampleData/MULPA Dataset/2_Data_AfterExclusion/01_RestingState_TrimmedToEvents_UniDu_OD/P06_01_RestingState_UniDu_OD.snirf",
+                    "C:/Users/foivo/Documents/Satori/SampleData/MULPA Dataset/2_Data_AfterExclusion/01_RestingState_TrimmedToEvents_UniDu_OD/S01_01_RestingState_UniDu_OD.snirf",
+                    "C:/Users/foivo/Documents/Satori/SampleData/MULPA Dataset/2_Data_AfterExclusion/01_RestingState_TrimmedToEvents_UniDu_OD/S02_01_RestingState_UniDu_OD.snirf",
+                    "C:/Users/foivo/Documents/Satori/SampleData/MULPA Dataset/2_Data_AfterExclusion/01_RestingState_TrimmedToEvents_UniDu_OD/S03_01_RestingState_UniDu_OD.snirf",
+                    "C:/Users/foivo/Documents/Satori/SampleData/MULPA Dataset/2_Data_AfterExclusion/01_RestingState_TrimmedToEvents_UniDu_OD/S04_01_RestingState_ProbOverflow_OK_OD_UniDu.snirf",
+                    "C:/Users/foivo/Documents/Satori/SampleData/MULPA Dataset/2_Data_AfterExclusion/01_RestingState_TrimmedToEvents_UniDu_OD/S08_01_RestingState_UniDu_OD.snirf",
+                    "C:/Users/foivo/Documents/Satori/SampleData/MULPA Dataset/2_Data_AfterExclusion/01_RestingState_TrimmedToEvents_UniDu_OD/S09_01_RestingState_UniDu_OD.snirf",
+                    "C:/Users/foivo/Documents/Satori/SampleData/MULPA Dataset/2_Data_AfterExclusion/01_RestingState_TrimmedToEvents_UniDu_OD/S10_01_RestingState_UniDu_OD.snirf",
+                    "C:/Users/foivo/Documents/Satori/SampleData/MULPA Dataset/2_Data_AfterExclusion/01_RestingState_TrimmedToEvents_UniDu_OD/S11_01_RestingState_UniDu_OD.snirf",
+                    "C:/Users/foivo/Documents/Satori/SampleData/MULPA Dataset/2_Data_AfterExclusion/01_RestingState_TrimmedToEvents_UniDu_OD/S12_01_RestingState_UniDu_OD.snirf",
+                    "C:/Users/foivo/Documents/Satori/SampleData/MULPA Dataset/2_Data_AfterExclusion/01_RestingState_TrimmedToEvents_UniDu_OD/S13_01_RestingState_ProbOverflow_OK_OD_UniDu.snirf",
+                    "C:/Users/foivo/Documents/Satori/SampleData/MULPA Dataset/2_Data_AfterExclusion/01_RestingState_TrimmedToEvents_UniDu_OD/S14_01_RestingState_UniDu_OD.snirf",
+                    "C:/Users/foivo/Documents/Satori/SampleData/MULPA Dataset/2_Data_AfterExclusion/01_RestingState_TrimmedToEvents_UniDu_OD/S15_01_RestingState_UniDu_OD.snirf",
+                    "C:/Users/foivo/Documents/Satori/SampleData/MULPA Dataset/2_Data_AfterExclusion/01_RestingState_TrimmedToEvents_UniDu_OD/S17_01_RestingState_UniDu_OD.snirf",
+                    "C:/Users/foivo/Documents/Satori/SampleData/MULPA Dataset/2_Data_AfterExclusion/01_RestingState_TrimmedToEvents_UniDu_OD/S18_01_RestingState_UniDu_OD.snirf",
+                    "C:/Users/foivo/Documents/Satori/SampleData/MULPA Dataset/2_Data_AfterExclusion/01_RestingState_TrimmedToEvents_UniDu_OD/S19_01_RestingState_UniDu_OD.snirf",
+                    "C:/Users/foivo/Documents/Satori/SampleData/MULPA Dataset/2_Data_AfterExclusion/01_RestingState_TrimmedToEvents_UniDu_OD/S22_01_RestingState_UniDu_OD.snirf",
+                    "C:/Users/foivo/Documents/Satori/SampleData/MULPA Dataset/2_Data_AfterExclusion/01_RestingState_TrimmedToEvents_UniDu_OD/S23_01_RestingState_UniDu_OD.snirf",
+                    "C:/Users/foivo/Documents/Satori/SampleData/MULPA Dataset/2_Data_AfterExclusion/01_RestingState_TrimmedToEvents_UniDu_OD/S24_01_RestingState_UniDu_OD.snirf",
+                    "C:/Users/foivo/Documents/Satori/SampleData/MULPA Dataset/2_Data_AfterExclusion/01_RestingState_TrimmedToEvents_UniDu_OD/S28_01_RestingState_UniDu_OD.snirf",
+                    "C:/Users/foivo/Documents/Satori/SampleData/MULPA Dataset/2_Data_AfterExclusion/01_RestingState_TrimmedToEvents_UniDu_OD/S29_01_RestingState_UniDu_OD.snirf",
+                    "C:/Users/foivo/Documents/Satori/SampleData/MULPA Dataset/2_Data_AfterExclusion/01_RestingState_TrimmedToEvents_UniDu_OD/S31_01_RestingState_UniDu_OD.snirf",
+                    "C:/Users/foivo/Documents/Satori/SampleData/MULPA Dataset/2_Data_AfterExclusion/01_RestingState_TrimmedToEvents_UniDu_OD/S34_01_RestingState_UniDu_OD.snirf",
+                    "C:/Users/foivo/Documents/Satori/SampleData/MULPA Dataset/2_Data_AfterExclusion/01_RestingState_TrimmedToEvents_UniDu_OD/S36_01_RestingState_UniDu_OD.snirf",
+                    "C:/Users/foivo/Documents/Satori/SampleData/MULPA Dataset/2_Data_AfterExclusion/01_RestingState_TrimmedToEvents_UniDu_OD/S38_01_RestingState_UniDu_OD.snirf",
+                    "C:/Users/foivo/Documents/Satori/SampleData/MULPA Dataset/2_Data_AfterExclusion/01_RestingState_TrimmedToEvents_UniDu_OD/S40_01_RestingState_UniDu_OD.snirf",
+                    "C:/Users/foivo/Documents/Satori/SampleData/MULPA Dataset/2_Data_AfterExclusion/01_RestingState_TrimmedToEvents_UniDu_OD/S41_01_RestingState_UniDu_OD.snirf"
+                ]
+            },
+            "id": "{a10dac94-a6d3-4abb-a242-10342bdff6f2}",
+            "model": {
+                "name": "fNIRSLoadODModel"
+            },
+            "position": {
+                "x": 116.95999999999998,
+                "y": 47.400000000000006
+            }
+        },
+        {
+            "Parameters": {
+                "SCICHRejectiondoubleSpinBox": 0.7
+            },
+            "id": "{f251243c-e811-42bf-95d3-2da5613b66b4}",
+            "model": {
+                "name": "fNIRSODSCIChannelRejectionModel"
+            },
+            "position": {
+                "x": 88,
+                "y": 342
+            }
+        },
+        {
+            "Parameters": {
+                "SSRallradioButton": false,
+                "SSRclosestradioButton": false,
+                "SSRcorrradioButton": true,
+                "npcaSSRspinBox": 1,
+                "rssrpcaadioButton": false,
+                "scSpecificChromophoresgroupBox": false,
+                "scdeoxycheckBox": true,
+                "scoxycheckBox": true,
+                "sctotalcheckBox": false
+            },
+            "id": "{b4697578-148e-4d02-bac0-da4d8aaba469}",
+            "model": {
+                "name": "fNIRSIOGLMSSRModel"
+            },
+            "position": {
+                "x": 110,
+                "y": 1764
+            }
+        },
+        {
+            "Parameters": {
+            },
+            "id": "{b8f2e7cb-6492-4652-89a2-d754034cd13f}",
+            "model": {
+                "name": "fNIRSIOODToConcentrationModel"
+            },
+            "position": {
+                "x": 112,
+                "y": 559
+            }
+        },
+        {
+            "Parameters": {
+                "HPBWcheckBox": true,
+                "HPBWdoubleSpinBox": 0.01,
+                "LPBWcheckBox": true,
+                "LPBWdoubleSpinBox": 0.1,
+                "TFHPFspinBox": 3,
+                "TFHPcheckBox": false,
+                "TFLPFdoubleSpinBox": 0.4,
+                "TFLPcheckBox": false,
+                "addShiftgroupBox": false,
+                "applyToMotioncheckBox": false,
+                "applyToPhysiocheckBox": false,
+                "linearDetrendcheckBox": true,
+                "nrOfShiftsspinBox": 3,
+                "shiftStartdoubleSpinBox": 1,
+                "spacingShiftdoubleSpinBox": 2
+            },
+            "id": "{02f39826-42b8-4eab-bc5c-2d7bc2396b23}",
+            "model": {
+                "name": "fNIRSIOFilteringModel"
+            },
+            "position": {
+                "x": 78.99999999999996,
+                "y": 855.2000000000002
+            }
+        },
+        {
+            "Parameters": {
+                "srinfluencedoubleSpinBox": 0.5,
+                "srinterpolationType": 3,
+                "sriterationsspinBox": 10,
+                "srlagspinBox": 5,
+                "srthreshdoubleSpinBox": 3.5
+            },
+            "id": "{1148ee1f-f40b-4306-98cd-15d9ddb6be75}",
+            "model": {
+                "name": "fNIRSSpikeRemovalCCModel"
+            },
+            "position": {
+                "x": 185.99999999999994,
+                "y": 1252.5999999999992
+            }
+        },
+        {
+            "Parameters": {
+                "applyToMotioncheckBox": true,
+                "ptranscheckBox": false,
+                "ztranscheckBox": true
+            },
+            "id": "{de6cf490-d781-4594-85d3-f5c46a5d76b5}",
+            "model": {
+                "name": "fNIRSIONormalizationModel"
+            },
+            "position": {
+                "x": 178,
+                "y": 2069
+            }
+        },
+        {
+            "Parameters": {
+                "directorylineEdit": "%PathToNIRSDocuments%/MULPA Dataset/3_Data_PrePro/01_RestingState_PrePro",
+                "extDirgroupBox": true,
+                "onlyCCcheckBox": true,
+                "suffixgroupBox": true,
+                "suffixlineEdit": "_SatPreP"
+            },
+            "id": "{5982edb5-9ea4-4cee-a9ec-611c357b9de4}",
+            "model": {
+                "name": "fNIRSCCSaveModel"
+            },
+            "position": {
+                "x": 151.23455999999982,
+                "y": 2319.0451199999993
+            }
+        },
+        {
+            "Parameters": {
+                "applyToPRTcheckBox": true,
+                "applytoMotioncheckbox": true,
+                "cutaftertriggercheckBox": false,
+                "cutaftertriggerdoubleSpinBox": 20,
+                "cutbeforetriggercheckBox": false,
+                "cutbeforetriggerdoubleSpinBox": 10,
+                "cutbegincheckBox": true,
+                "cutbegindoubleSpinBox": 20,
+                "cutendcheckBox": false,
+                "cutenddoubleSpinBox": 0,
+                "cutlengthfrombegincheckBox": false,
+                "cutlengthfrombegindoubleSpinBox": 0,
+                "cutlengthfromendcheckBox": false,
+                "cutlengthfromenddoubleSpinBox": 0
+            },
+            "id": "{386f3fb9-c808-4ddb-9b5d-eee86e37c282}",
+            "model": {
+                "name": "fNIRSTRIMDataCCModel"
+            },
+            "position": {
+                "x": -407.99999999999994,
+                "y": 645.6
+            }
+        },
+        {
+            "Parameters": {
+                "applyToPRTcheckBox": true,
+                "applytoMotioncheckbox": true,
+                "cutaftertriggercheckBox": false,
+                "cutaftertriggerdoubleSpinBox": 20,
+                "cutbeforetriggercheckBox": false,
+                "cutbeforetriggerdoubleSpinBox": 10,
+                "cutbegincheckBox": false,
+                "cutbegindoubleSpinBox": 0,
+                "cutendcheckBox": true,
+                "cutenddoubleSpinBox": 20,
+                "cutlengthfrombegincheckBox": false,
+                "cutlengthfrombegindoubleSpinBox": 0,
+                "cutlengthfromendcheckBox": false,
+                "cutlengthfromenddoubleSpinBox": 0
+            },
+            "id": "{cba64f57-649d-4b29-8cb0-d3a8f0b3668f}",
+            "model": {
+                "name": "fNIRSTRIMDataCCModel"
+            },
+            "position": {
+                "x": -398.3999999999999,
+                "y": 993.5999999999999
+            }
+        }
+    ],
+    "version": 1.7999999523162842
+}

@@ -1,0 +1,99 @@
+# fNIRS Resting-State Functional Connectivity Analysis using ICA
+
+This folder contains scripts for performing Independent Component Analysis (ICA) on fNIRS resting-state data to identify motor-related functional connectivity patterns. The analysis pipeline follows and extends the methodology from Zhang et al. (2010).
+
+## Scripts
+- #1a_PCA & ICA.py  
+   Compute PCA → FastICA per subject → save HbO/HbR IC spatial maps.  
+- #2a_Group_RSFC_ICA.py  
+   Select each subject’s motor-related IC (spatial correlation with task T-map) → one-sample t-tests across subjects → save group RSFC tables.  
+- #3a_create_cmp.py  
+   Load group RSFC results → add missing channels → sort SDKey → export .cmp files for visualization.  
+- testPCA and ICA test.py  
+   Single-subject checks and plotting utilities. 
+
+## Analysis Overview
+
+### **Methodology Pipeline**
+
+1. **Dimensionality Reduction (PCA)**
+   - Apply PCA separately to HbO and HbR signals
+   - Retain components explaining 99% of variance
+   - Reduces dimensonality
+
+2. **Independent Component Analysis (FastICA)**
+   - Extract spatially independent components from PCA-reduced data
+   - Number of ICs = Number of retained PCs
+   - Custom parameters matching Zhang et al. (2010) MATLAB implementation
+
+3. **Motor-Related IC Selection**
+   - Correlate each IC with group-level motor task T-values
+   - Select IC with highest correlation (objective validation)
+   - Improves replicability over visual inspection
+
+4. **Group-Level Statistical Analysis**
+   - One-sample t-tests across subjects for each channel
+   - FDR correction for multiple comparisons
+   - Generate group-level motor-RSFC maps
+
+## Script Details
+
+### **`#1a_PCA & ICA.py`**
+
+**Purpose:** Generate Individual Subject ICA Spatial Maps
+
+**Input:**
+- Preprocessed SNIRF files (folder with `_SatPrep` suffix)
+- Files must be: concentration changes, event-trimmed, detrended, bandpass filtered (0.01-0.2 Hz)
+
+**Output:**
+3a_Preprocessed_ICASpatialMaps/
+    P01_01_RestingState_Preproc_ICs.xlsx
+    P03_01_RestingState_Preproc_ICs.xlsx
+    ...
+
+**Each Excel file contains:**
+- `HbO Spatial Maps`: IC loadings for oxygenated hemoglobin channels
+- `HbR Spatial Maps`: IC loadings for deoxygenated hemoglobin channels
+
+### **Script #2: `#2a_Group_RSFC_ICA.py`**
+
+**Purpose:** Group-Level Motor-RSFC Analysis
+
+**Input:**
+- Individual IC spatial maps (from Script #1)
+- Group motor GLM T-values (`MultiStudy_GLM_Results_MSGLM_Results.xlsx`)
+
+**Processing Steps:**
+1. **IC Selection per Subject:**
+   - Correlate all ICs with motor task T-values
+   - Select IC with highest correlation (lowest p-value)
+
+2. **Group Matrix Construction:**
+   - Compile selected ICs across all subjects
+   - Create channels × subjects matrices
+
+3. **Statistical Testing:**
+   - One-sample t-test per channel (H₀: mean = 0)
+
+## **Input Data Requirements**
+
+**For Script #1:**
+- Preprocessed SNIRF files in folder ending with `_SatPrep` [for my pipelines at least]
+    - HbO/HbR concentration changes
+    - Event-trimmed to uniform duration
+    - Trimmed to reach steady state (first 2ming, last 30sec)
+    - Detrended (linear trends removed)
+    - Bandpass filtered (0.01-0.2Hz) (objective selection of IC see **Methodology Pipeline: step 3**)
+
+**For Script #2:**
+- Output from Script #1 (IC spatial maps)
+- Group motor GLM results Excel file with T-values
+
+## References
+
+**Primary Methodology:**
+Zhang, H., Zhang, Y. J., Lu, C. M., Ma, S. Y., Zang, Y. F., & Zhu, C. Z. (2010). Functional connectivity as revealed by independent component analysis of resting-state fNIRS measurements. Neuroimage, 51(3), 1150-1161.
+
+**Foivos Kotsogiannis**  
+*Date: June 2025*
